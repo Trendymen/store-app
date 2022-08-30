@@ -1,0 +1,27 @@
+<button id="absolute-button">Absolute Button</button>
+<style>
+#absolute-button {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 10;
+}
+</style>
+
+<script>
+(()=>{
+    const btn = document.querySelector("#absolute-button");
+    btn.addEventListener("click",() => {
+        btn.innerText = "Clicked Button"
+    })
+})()
+
+</script>
+
+
+{% schema %}
+{
+  "name": "card-extension-embed",
+  "target": "body"
+}
+{% endschema %}

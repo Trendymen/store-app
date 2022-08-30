@@ -1,0 +1,26 @@
+<div id="card-extension-block">
+    App blocks let you build powerful integrations with online store themes!
+</div>
+<p style="color: {{ block.settings.color }}">
+    Static text
+</p>
+
+{% schema %}
+{
+  "name": "card-extension-block",
+  "templates": [
+    "product"
+  ],
+  "target": "section",
+  "stylesheet": "app.css",
+  "javascript": "app.js",
+  "settings": [
+    {
+      "label": "Color",
+      "id": "color",
+      "type": "color",
+      "default": "#000000"
+    }
+  ]
+}
+{% endschema %}
